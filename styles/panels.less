@@ -22,6 +22,8 @@
 
 .overlay, atom-panel.modal {
 
+  padding: 20px;
+
   &.from-top {
     position: absolute;
     top: 40%;
@@ -29,4 +31,13 @@
     transform: translate(-50%,0);
     margin: 0;
   }
+
+  .editor.mini {
+    padding: 20px;
+    border-radius: 2px;
+    border-bottom: 1px solid lighten(@inset-panel-background-color, 10%);
+    background-color: darken(@inset-panel-background-color, 1%);
+    max-height: none;
+  }
+
 }
