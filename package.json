@@ -5,7 +5,9 @@
   "description": "A minimalistic UI Theme for Atom",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "dark",
+    "unstad"
   ],
   "repository": "https://github.com/itsnwa/unstad-ui",
   "license": "MIT",
