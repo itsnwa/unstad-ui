@@ -10,3 +10,41 @@
 .status-modified { color: @text-color-warning; }
 .status-removed  { color: @text-color-error; }
 .status-renamed  { color: @text-color-info; }
+
+// Default list item style
+.list-tree .list-item,
+.list-tree .list-nested-item {
+ color: @text-color;
+ opacity: .85;
+}
+
+// Ignored files
+.list-tree .list-item.status-ignored,
+.list-tree .list-nested-item.status-ignored {
+  color: @text-color-subtle;
+  opacity: .4;
+}
+
+// Modified files/folders
+.list-tree .list-item.status-modified,
+.list-tree .list-nested-item.status-modified {
+  color: #f0c67e;
+}
+
+// Added files/folders
+.list-tree .list-item.status-added,
+.list-tree .list-nested-item.status-added {
+  color: @text-color-success;
+}
+
+// Removed files/folders
+.list-tree .list-item.status-removed,
+.list-tree .list-nested-item.status-removed {
+  color: @text-color-error;
+}
+
+// Renamed files/folders
+.list-tree .list-item.status-renamed,
+.list-tree .list-nested-item.status-renamed {
+  color: @text-color-info;
+}
