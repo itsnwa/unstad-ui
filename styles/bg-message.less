@@ -1,0 +1,17 @@
+background-tips .background-message .message {
+  font-size: 14px;
+}
+
+.background-message::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url('atom://unstad-ui/unstad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%,-50%);
+  top: 40%;
+  left: 50%;
+}
