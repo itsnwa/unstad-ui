@@ -6,44 +6,49 @@
 
 .status          { color: @text-color; }
 .status-added    { color: @text-color-success; }
-.status-ignored  { color: @text-color-subtle; }
+.status-ignored  { color: darken(@text-color-subtle, 20%); }
 .status-modified { color: @text-color-warning; }
 .status-removed  { color: @text-color-error; }
 .status-renamed  { color: @text-color-info; }
 
 // Default list item style
 .list-tree .list-item,
-.list-tree .list-nested-item {
+.list-tree .list-nested-item,
+.list-tree .list-nested-item .header {
  color: @text-color;
 }
 
 // Ignored files
 .list-tree .list-item.status-ignored,
-.list-tree .list-nested-item.status-ignored {
-  color: @text-color-subtle;
-  opacity: .4;
+.list-tree .list-nested-item.status-ignored,
+.list-tree .list-nested-item.status-ignored .header {
+  color: darken(@text-color-subtle, 20%);
 }
 
 // Modified files/folders
 .list-tree .list-item.status-modified,
-.list-tree .list-nested-item.status-modified {
+.list-tree .list-nested-item.status-modified,
+.list-tree .list-nested-item.status-modified .header {
   color: #f0c67e;
 }
 
 // Added files/folders
 .list-tree .list-item.status-added,
-.list-tree .list-nested-item.status-added {
+.list-tree .list-nested-item.status-added,
+.list-tree .list-nested-item.status-added .header {
   color: @text-color-success;
 }
 
 // Removed files/folders
 .list-tree .list-item.status-removed,
-.list-tree .list-nested-item.status-removed {
+.list-tree .list-nested-item.status-removed,
+.list-tree .list-nested-item.status-removed .header {
   color: @text-color-error;
 }
 
 // Renamed files/folders
 .list-tree .list-item.status-renamed,
-.list-tree .list-nested-item.status-renamed {
+.list-tree .list-nested-item.status-renamed,
+.list-tree .list-nested-item.status-renamed .header {
   color: @text-color-info;
 }
