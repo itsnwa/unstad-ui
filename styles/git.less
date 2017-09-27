@@ -14,41 +14,53 @@
 // Default list item style
 .list-tree .list-item,
 .list-tree .list-nested-item,
-.list-tree .list-nested-item .header {
+li.list-item span.name,
+li.list-item.selected span.name,
+li.directory.entry div.header.list-item span.name {
  color: @text-color;
 }
 
 // Ignored files
 .list-tree .list-item.status-ignored,
 .list-tree .list-nested-item.status-ignored,
-.list-tree .list-nested-item.status-ignored .header {
+li.status-ignored.list-item span.name,
+li.status-ignored.list-item.selected span.name,
+li.directory.entry.status-ignored div.header.list-item span.name {
   color: darken(@text-color-subtle, 20%);
 }
 
 // Modified files/folders
 .list-tree .list-item.status-modified,
 .list-tree .list-nested-item.status-modified,
-.list-tree .list-nested-item.status-modified .header {
+li.status-modified.list-item span.name,
+li.status-modified.list-item.selected span.name,
+li.directory.entry.status-modified div.header.list-item span.name {
   color: #f0c67e;
 }
 
 // Added files/folders
 .list-tree .list-item.status-added,
 .list-tree .list-nested-item.status-added,
-.list-tree .list-nested-item.status-added .header {
+li.status-added.list-item span.name,
+li.status-added.list-item.selected span.name,
+li.directory.entry.status-added div.header.list-item span.name {
   color: @text-color-success;
 }
 
 // Removed files/folders
 .list-tree .list-item.status-removed,
 .list-tree .list-nested-item.status-removed,
-.list-tree .list-nested-item.status-removed .header {
+li.status-removed.list-item span.name,
+li.status-removed.list-item.selected span.name,
+li.directory.entry.status-removed div.header.list-item span.name {
   color: @text-color-error;
 }
 
 // Renamed files/folders
 .list-tree .list-item.status-renamed,
 .list-tree .list-nested-item.status-renamed,
-.list-tree .list-nested-item.status-renamed .header {
+li.status-renamed.list-item span.name,
+li.status-renamed.list-item.selected span.name,
+li.directory.entry.status-renamed div.header.list-item span.name {
   color: @text-color-info;
 }
